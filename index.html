@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Conversor de Unidades de Medida</h1>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <label for="valor">Valor:</label>
-            </div>
-            <div class="col">
-                <input type="number" id="valor" placeholder="Digite o valor">
-            </div>
+      <div class="row">
+        <div class="col">
+          <label for="valor">Valor:</label>
         </div>
-        <div class="row">
-            <div class="col">
-                <label for="unidade">Unidade:</label>
-            </div>
-            <div class="col">
-                <select id="unidadeInicial">
-                    <option value="metros">Metros</option>
-                    <option value="quilometros">Quilômetros</option>
-                    <option value="centimetros">Centímetros</option>
-                    <option value="milimetros">Milímetros</option>
-                </select>
-            </div>
+        <div class="col">
+          <input type="number" id="valor" placeholder="Digite o valor" />
         </div>
-        <div class="row">
-            <div class="col">
-                <label for="unidade">Unidade de Destino:</label>
-            </div>
-            <div class="col">
-                <select id="unidadeDestino">
-                <option value="metros">Metros</option>
-                <option value="quilometros">Quilômetros</option>
-                <option value="centimetros">Centímetros</option>
-                <option value="milimetros">Milímetros</option>
-            </select>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="unidade">Unidade:</label>
         </div>
-    </div>
-    <div class="button-container">
-
+        <div class="col">
+          <select id="unidadeInicial">
+            <option value="metros">Metros</option>
+            <option value="quilometros">Quilômetros</option>
+            <option value="centimetros">Centímetros</option>
+            <option value="milimetros">Milímetros</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="unidade">Unidade de Destino:</label>
+        </div>
+        <div class="col">
+          <select id="unidadeDestino">
+            <option value="metros">Metros</option>
+            <option value="quilometros">Quilômetros</option>
+            <option value="centimetros">Centímetros</option>
+            <option value="milimetros">Milímetros</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-container">
         <button id="converter">Converter</button>
+      </div>
+      <h2 id="resultado"></h2>
     </div>
-    <h2 id="resultado"></h2>
+    <footer>
+      <p>© 2023 Conversor de Unidades. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://github.com/vinicius0919">Vinícius Lima</a></p>
+        <div class="carroussel">
+            <img class="image-1" src="./assets/java-script.png" alt="Imagem 1" />
+            <img class="image-2" src="./assets/html.png" alt="Imagem 2" />
+            <img class="image-3" src="./assets/css-3.png" alt="Imagem 3" />
+        </div>
+    </footer>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
