@@ -9,29 +9,42 @@
 <body>
     <h1>Conversor de Unidades de Medida</h1>
     <div class="container">
-        <div>
+        <div class="row">
+            <div class="col">
+                <label for="valor">Valor:</label>
+            </div>
+            <div class="col">
+                <input type="number" id="valor" placeholder="Digite o valor">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="unidade">Unidade:</label>
+            </div>
+            <div class="col">
+                <select id="unidadeInicial">
+                    <option value="metros">Metros</option>
+                    <option value="quilometros">Quilômetros</option>
+                    <option value="centimetros">Centímetros</option>
+                    <option value="milimetros">Milímetros</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="unidade">Unidade de Destino:</label>
+            </div>
+            <div class="col">
+                <select id="unidadeDestino">
+                <option value="metros">Metros</option>
+                <option value="quilometros">Quilômetros</option>
+                <option value="centimetros">Centímetros</option>
+                <option value="milimetros">Milímetros</option>
+            </select>
+        </div>
+    </div>
+    <div class="button-container">
 
-            <label for="valor">Valor:</label>
-            <input type="number" id="valor" placeholder="Digite o valor">
-        </div>
-        <div>
-            <label for="unidade">Unidade:</label>
-            <select id="unidadeInicial">
-                <option value="metros">Metros</option>
-                <option value="quilometros">Quilômetros</option>
-                <option value="centimetros">Centímetros</option>
-                <option value="milimetros">Milímetros</option>
-            </select>
-        </div>
-        <div>
-            <label for="unidade">Unidade de Destino:</label>
-            <select id="unidadeDestino">
-                <option value="metros">Metros</option>
-                <option value="quilometros">Quilômetros</option>
-                <option value="centimetros">Centímetros</option>
-                <option value="milimetros">Milímetros</option>
-            </select>
-        </div>
         <button id="converter">Converter</button>
     </div>
     <h2 id="resultado"></h2>
