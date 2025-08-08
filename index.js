@@ -27,10 +27,10 @@ setInterval(() => {
 
 function converterUnidade(valor, unidadeInicial, unidadeDestino) {
   const fatores = {
-    milimetros: {value: 0.001, shortName: "mm"},
-    centimetros: {value: 0.01, shortName: "cm"},
-    metros: {value: 1, shortName: "m"},
-    quilometros: {value: 1000, shortName: "km"},
+    milimetros: { value: 0.001, shortName: "mm" },
+    centimetros: { value: 0.01, shortName: "cm" },
+    metros: { value: 1, shortName: "m" },
+    quilometros: { value: 1000, shortName: "km" },
   };
 
   // Converte o valor para metros
@@ -38,7 +38,7 @@ function converterUnidade(valor, unidadeInicial, unidadeDestino) {
   // Converte de metros para a unidade de destino
   const valorConvertido = valorEmMetros / fatores[unidadeDestino].value;
 
-  return `${valorConvertido} ${fatores[unidadeDestino].shortName}`;
+  return { valor: valorConvertido, unidade: fatores[unidadeDestino].shortName };
 }
 
 // converter para formatação brasileira
@@ -61,8 +61,6 @@ converter.addEventListener("click", () => {
       unidadeAlvo
     );
     resultado.textContent = `Resultado:
-     ${formatarResultado(
-      resultadoConversao
-    )}`;
+     ${formatarResultado(resultadoConversao.valor)} ${resultadoConversao.unidade}`;
   }
 });
